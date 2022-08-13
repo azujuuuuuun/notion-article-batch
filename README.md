@@ -1,1 +1,1 @@
-# notion-article-batch
+# notion-page-update-batch

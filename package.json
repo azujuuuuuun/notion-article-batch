@@ -1,0 +1,31 @@
+{
+  "name": "notion-page-update-batch",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv/config index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/azujuuuuuun/notion-page-update-batch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azujuuuuuun/notion-page-update-batch/issues"
+  },
+  "homepage": "https://github.com/azujuuuuuun/notion-page-update-batch#readme",
+  "dependencies": {
+    "@notionhq/client": "2.1.1"
+  },
+  "devDependencies": {
+    "dotenv": "16.0.1"
+  },
+  "volta": {
+    "node": "16.16.0",
+    "npm": "8.17.0"
+  }
+}
