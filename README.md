@@ -1,1 +1,1 @@
-# notion-page-update-batch
+# notion-page-update-script

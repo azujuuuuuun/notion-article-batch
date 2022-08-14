@@ -1,5 +1,5 @@
 {
-  "name": "notion-page-update-batch",
+  "name": "notion-page-update-script",
   "type": "module",
   "version": "1.0.0",
   "description": "",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/azujuuuuuun/notion-page-update-batch.git"
+    "url": "git+ssh://git@github.com/azujuuuuuun/notion-page-update-script.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/azujuuuuuun/notion-page-update-batch/issues"
+    "url": "https://github.com/azujuuuuuun/notion-page-update-script/issues"
   },
-  "homepage": "https://github.com/azujuuuuuun/notion-page-update-batch#readme",
+  "homepage": "https://github.com/azujuuuuuun/notion-page-update-script#readme",
   "dependencies": {
     "@notionhq/client": "2.1.1"
   },
