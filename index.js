@@ -40,6 +40,17 @@ const fetchNotReadPages = async (startCursor) => {
   return fetchPages(databaseId, filter, sorts, startCursor, pageSize);
 };
 
+const fetchNotReadPagesRecursively = async (startCursor) => {
+  const response = await fetchNotReadPages(startCursor);
+
+  if (response.has_more) {
+    const pages = await fetchNotReadPagesRecursively(response.next_cursor);
+    return response.results.concat(pages);
+  } else {
+    return response.results;
+  }
+};
+
 // @see https://developers.notion.com/reference/patch-page
 const updatePage = async (pageId, properties) => {
   try {
@@ -68,20 +79,7 @@ const main = async () => {
   const t0 = performance.now();
   console.log(`${new Date()} Update started.`);
 
-  const pages = [];
-  let nextCursor;
-
-  while (true) {
-    const response = await fetchNotReadPages(nextCursor);
-
-    pages.push(...response.results);
-
-    if (!response.has_more) {
-      break;
-    }
-
-    nextCursor = response.next_cursor;
-  }
+  const pages = await fetchNotReadPagesRecursively();
 
   for (let i = 0; i < pages.length; i++) {
     if (dryRun) {
