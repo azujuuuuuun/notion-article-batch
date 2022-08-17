@@ -31,7 +31,7 @@ const fetchNotReadPages = async (startCursor) => {
   };
   const sorts = [
     {
-      property: "Created",
+      property: "Created time",
       direction: "ascending",
     },
   ];
