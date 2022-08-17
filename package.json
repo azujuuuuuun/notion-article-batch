@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node -r dotenv/config index.js",
+    "set-read-date": "node -r dotenv/config set-read-date.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,7 +20,8 @@
   },
   "homepage": "https://github.com/azujuuuuuun/notion-page-update-script#readme",
   "dependencies": {
-    "@notionhq/client": "2.1.1"
+    "@notionhq/client": "2.1.1",
+    "dayjs": "1.11.5"
   },
   "devDependencies": {
     "dotenv": "16.0.1"
