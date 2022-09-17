@@ -1,18 +1,17 @@
 {
   "name": "notion-page-update-script",
-  "type": "module",
   "version": "1.0.0",
+  "license": "ISC",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/azujuuuuuun/notion-page-update-script.git"
+  },
   "scripts": {
     "start": "node -r dotenv/config index.js",
     "set-read-date": "node -r dotenv/config set-read-date.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/azujuuuuuun/notion-page-update-script.git"
-  },
-  "license": "ISC",
   "dependencies": {
     "@notionhq/client": "2.1.1",
     "dayjs": "1.11.5"
@@ -20,6 +19,7 @@
   "devDependencies": {
     "dotenv": "16.0.1"
   },
+  "type": "module",
   "volta": {
     "node": "16.17.0",
     "npm": "8.17.0"
