@@ -2,7 +2,6 @@
   "name": "notion-page-update-script",
   "type": "module",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node -r dotenv/config index.js",
@@ -13,12 +12,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/azujuuuuuun/notion-page-update-script.git"
   },
-  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/azujuuuuuun/notion-page-update-script/issues"
-  },
-  "homepage": "https://github.com/azujuuuuuun/notion-page-update-script#readme",
   "dependencies": {
     "@notionhq/client": "2.1.1",
     "dayjs": "1.11.5"
